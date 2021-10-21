@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../fonts/css/all.css">
+    <link rel="stylesheet" href="docker.css">
+</head>
+<body>
+
+    <div class="container">
+        <h3>Field Officer Dashboard</h3>
+        <div class="d-grid">
+            <div class="col-2">
+                <div class="card">
+                    <div class="card-head">
+                        <h4>Welcome !</h4>
+                        <p>Field Officer 1</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="imgThumb">
+                            <img src="../../1.png" alt="">
+                        </div>
+                        <div class="row justify-space-between align-base">
+                            <p><span>1</span><br>In progress</p>
+                            <button class="viewBtn">View Profile</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-8 button-group">
+                <div class="row justify-space-between">
+                    <button class="btn row btn-progress justify-space-between">
+                        <span><i class="fas fa-check-circle icon bg-green text-white"></i></span>
+                        <p>In Progress <br><span>4</span></p>
+                    </button>
+
+                    <button class="btn row btn-approved justify-space-between">
+                        <span><i class="fas fa-check-circle bg-red icon text-white"></i></span>
+                        <p>Approved<br><span>15</span></p>
+                    </button>
+                    
+                    <button class="btn row btn-hold justify-space-between">
+                        <span><i class="fas fa-check-circle bg-orange icon text-white"></i></span>
+                        <p>Hold <br><span>0</span></p>
+                    </button>
+                </div>
+            </div>
+
+            <div class="process-status">
+                <div class="row">
+                    <div class="bg-blue p-3">
+                        <p>Request Processed</p>
+                    </div>
+                    <div class="process-detail p-3">
+                        <p><span>Month Of Date: </span> 0</p>
+                        <p><span>Year Of Date: </span> 0</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tasks">
+                <div class="row justify-space-between">
+                    <div class="paper">
+                        <h4>My Task</h4>
+                        <div class="chart"></div>
+                    </div>
+
+                    <div class="paper">
+                        <h4>SLA</h4>
+                        <div class="chart"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(248, 246, 244);
+}
+.container h3 {
+    text-transform: uppercase;
+}
+
+.d-grid {
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    grid-template-rows: 1fr 1fr auto;
+    justify-content: space-between;
+    margin: 20px auto;
+    grid-gap: 20px;
+}
+
+.col-2 {
+    grid-row: 1/3;
+}
+.card {
+    box-shadow: 0 2px 3px 1px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+.card-head {
+    background-color: rgb(14, 46, 141);
+    color: #fff;
+    padding: 10px 10px 50px;
+    position: relative;
+}
+.card-head p {
+    font-size: 0.9rem;
+    color: antiquewhite;
+}
+.card-body {
+    position: relative;
+    padding: 50px 20px 20px;
+}
+.imgThumb {
+    position: absolute;
+    top: -40px;
+    right: 25px;
+    background-color: #ddd;
+    border-radius: 50%;
+    padding: 5px;
+    width: 80px;
+    height: 80px;
+}
+.row {
+    display: flex;
+    width: 100%;
+}
+.justify-space-between {justify-content: space-between;}
+.align-base {align-items: flex-end;}
+
+.viewBtn {
+    padding: 7px 15px;
+    color: #fff;
+    background-color: rgb(14, 46, 141);
+    border: none;
+    outline: none;
+}
+.card-body p span {color: green;}
+img {
+    width: 100%;
+}
+.bg-green {
+    color: green;
+}
+.bg-red {
+    color: red;
+}
+.bg-orange {
+    color: olivedrab;
+}
+
+.button-group .btn {
+    box-shadow: 0 0px 2px rgba(0,0,0,0.2);
+    line-height: 1.5;
+    padding: 15px;
+    border: none;
+    border-bottom: 2px solid;
+    background-color: #fff;
+    outline: none;
+    border-radius: 5px;
+    width: calc(100% - 50px);
+    align-items: stretch;
+}
+.button-group .btn-progress {border-color: green;}
+.button-group .btn-approved {border-color: red;}
+.button-group .btn-hold {border-color: olivedrab;}
+.icon {
+    font-size: 1.4rem;
+}
+.button-group .btn p {text-align: end;}
+.button-group .btn p span {
+    font-weight: 600;
+}
+
+.button-group .btn:not(:last-of-type) {
+    margin-right: 20px;
+}
+
+.process-status {
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    grid-row: 3/4;
+    overflow: hidden;
+    font-weight: 600;
+}
+.bg-blue {
+    background-color: rgb(14, 46, 141);
+    color: #fff;
+}
+.p-3 {
+    padding: 30px 20px;
+}
+.process-detail p span {
+    color: rgb(184, 214, 14);
+}
+
+.tasks {
+    grid-row: 2/4;
+}
+
+.paper {
+    width: 45%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 5px 10px;
+    z-index: 1;
+}
+.paper .chart {
+    width: 100px;
+    height: 90px;
+    border: 25px solid rgb(14, 46, 141);
+    margin: 20px auto 50px;
+    border-radius: 50%;
+    position: relative;
+}
+.paper .chart::before {
+    position: absolute;
+    content: '';
+    left: -25px;
+    top: -10px;
+    width: 100%;
+    height: 100%;
+    border: 25px solid rgb(6, 35, 121);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.card:hover,
+.btn:hover,
+.process-status:hover,
+.paper:hover {
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    transform: translateY(-10px);
+    transition: all 0.5s ease;
+}
